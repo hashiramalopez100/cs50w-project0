@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% extends "layout.html" %}
+
+    {%block body%}
+
+    <h1 id="title">Welcome my Website</h1>
+
+    <div #lista>
+        <ol>
+            <li> 
+               <a href="#section1">Information</a> 
+            </li>
+            <li><a href="#section2">Hobbies</a></li>
+            <li><a href="#section3">Table</a></li>
+        </ol>
+    </div>
+    
+    <div class="info" id=section1>
+        <h2>
+            Hello!, my name is Kevin Alexander Lopez Tellez, it's a pleasure to greet you.
+        </h2>
+        <br>
+        <h3>some photos of me and others</h3>
+
+        <div id=fotos>
+
+            <img src="../static/img/me2.jpg" alt="photo 1 of me" class="foto">
+            <img src="../static/img/me.jpg" alt="photo 2 of me"  class="foto">
+            <img src="../static/img/code.jpg" alt="photo 3"  class="foto">
+            <img src="../static/img/code2.jpg" alt="photo 4"  class="foto">
+            <img src="../static/img/js.jpg" alt="photo 5"  class="foto">
+
+        </div>
+        
+        <p>
+            Ok, for the beginning, I"m starting in the world of programation, i dont know english, no very well, I'm improvising alot, my hobbies are videogames, playing soccer and listening to music. I live in Ticuantepe, I like my municipality.
+        </p>
+    </div>
+
+    <div id=section2 class="info">
+        <h2>My Hobbies</h2>
+
+        <ol>
+            <li>
+                <h4>Video juegos</h4>
+                <ul>
+                    <li>League of legends</li>
+                    <li>Mobile legends</li>
+                    <li>COD</li>
+                    <li>MTG Arena</li>
+                </ul>
+                <p>La lista podria seguir, pero son algunos de los video juegos que mas juego.</p>
+            </li>
+            <li>
+                <h4>Jugar futbol</h4>
+            </li>
+            <li>
+                <h4>Escuhar musica</h4>
+                <p>Algunas de mis bandas favoritas son:</p>
+                <ul>
+                    <li>Linkin park</li>
+                    <li>Askin alexandria</li>
+                    <li>BTMH</li>
+                    <li>Epica</li>
+                </ul>
+            </li>
+        </ol>
+    </div>
+
+    <div id="section3" class="info">
+
+        <h2>Muestra de una tabla con datos random, del juego de league of legends</legend></h2>
+        <hr>
+        <table style="width:100%">
+            <tr>
+              <th>Nombre</th>
+              <th>Rol</th>
+              <th>Linea</th>
+            </tr>
+            <tr>
+              <td>Talon</td>
+              <td>Asesino</td>
+              <td>Mid laner</td>
+            </tr>
+            <tr>
+              <td>Fizz</td>
+              <td>Asesino</td>
+              <td>Mid laner</td>
+            </tr>
+            <tr>
+                <td>Lux</td>
+                <td>soporte</td>
+                <td>Bottom laner</td>
+              </tr>
+          </table>
+    </div>
+
+    {%endblock%}
+</html>
