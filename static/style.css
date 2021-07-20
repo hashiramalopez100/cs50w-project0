@@ -14,10 +14,39 @@ body{
     
     color: white;
 }
+
+#footer{
+position: fixed;
+position: bottom;
+}
+
+#album{
+border: solid black 2px;
+padding: 35px;
+margin: 30px;
+border-radius: 25px;
+box-shadow: rgb(76, 45, 117) 7px 3px 3.5px;
+}
+
+.img{
+    height: 250px;
+    width: 400;
+    padding: 10px;
+    margin: 15px;
+    box-shadow: inset;
+}
+
 #lista{
     border:2px solid #ffff;
     box-shadow: inset;
     border-radius: 50px;
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    text-justify: auto;
 }
 
 #title{
@@ -46,9 +75,11 @@ body{
  height: 50%;
 }
 
+
+
 table{
     background-color: #888888;
-    background: linear-gradient(to top, rgb(83, 78, 78),#888888);
+    background: linear-gradient(to top, rgb(83, 78, 78) ,#888888 , rgb( 83,82,82));
 }
 
 table, th, td {
