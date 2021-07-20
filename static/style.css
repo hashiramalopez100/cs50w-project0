@@ -15,10 +15,6 @@ body{
     color: white;
 }
 
-#footer{
-position: fixed;
-position: bottom;
-}
 
 #album{
 border: solid black 2px;
