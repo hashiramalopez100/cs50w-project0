@@ -11,6 +11,7 @@
             <li><a href="#section1">Information</a></li>
             <li><a href="#section2">Hobbies</a></li>
             <li><a href="#section3">Table</a></li>
+            <li><a href="#section4">Task</a></li>
         </ol>
     </div>
     
@@ -92,6 +93,35 @@
                 <td>Bottom laner</td>
               </tr>
           </table>
+    </div>
+
+    <div id="section4">
+
+        <div class="col-md-8 offset-lg-2 text-center pb-4">
+            <h2>Lista de tareas</h2>
+
+            <div class="card bg-dark text-light">
+
+                <div class="card-header pb-3">
+                    <a href=" {{url_for('add')}} " class="bg-secondary m-5  text-light"><h3>Para agregar una tarea</h3> <button type="submit" class="btn bg-primary text-light shadow-lg"> click here </button> </a>
+                </div>
+
+                <div class="card-body">
+                    <ol>
+                        {% for tarea in tareas %} 
+                        <li> 
+                            <p>
+                                {{ tarea }} 
+                            </p>
+                        </li>
+                        {% endfor %} 
+                    </ol>
+                </div>
+               
+            </div>
+
+        </div>
+
     </div>
 
     {%endblock%}
