@@ -18,6 +18,8 @@ body{
 
 #album{
 border: solid black 2px;
+display: block;
+flex: content;
 padding: 35px;
 margin: 30px;
 border-radius: 25px;

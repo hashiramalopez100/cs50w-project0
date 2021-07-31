@@ -3,9 +3,9 @@
 {% block body %}
 
 <center><h1 class="p-3">Formularios usando boostrap4</h1></center>
-
-<div class="row">
-    <div class="col-lg-10 offset-lg-1">
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12">
         <div class="card p-2 m-3">
             <div class="card-header bg-dark shadow-lg">
               <p class="text-light m-2">Ejemplo de un card con boostrap</p>
@@ -16,62 +16,68 @@
                   <img src="../static/img/js.jpg" alt="" class="card-img-top">
               </div>
             </div>
-            <div class="col-md-6 text-dark p-2">
+            <div class="col-md-6 text-dark px-4">
               <h3>Imagen de una tasa con logo de relleno a lado izquierdo.</h3>
               <hr>
-              <p class="p-3 m-2"> Esto es solo testo de relleno con la finalidadde  que el encuadre derecho no se vea vacio y de un poco deelegancia a  nivel visual, <strong>psdt: si llegaste hasta aca teencanta la  lectura.</strong> </p>
+              <p > Esto es solo testo de relleno con la finalidad de  que el encuadre derecho no se vea vacio y de un poco de elegancia a  nivel visual, <strong>psdt: si llegaste hasta aca te encanta la  lectura.</strong> </p>
             </div>
           </div>
             
       </div>
     
     </div>
-</div>
-
-<div class="row pt-3">
-  <div class="col-sm-10 offset-lg-1">
-    <h2 class="m-2 text-center">Formularios</h2>
-
-    <div class="card p-2 m-2 bg-primary">
-
-      <div class="pt-3 col-md-8 offset-lg-2">
-        <div class="mb-3">
-          <input type="text" class="form-control" placeholder="Name">
-        </div>
-        <div class="mb-3">
-        <input type="password" class="form-control" placeholder="Password">
-        </div>
-        <div class="mb-3">
-          <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-        </div>
-      </div>
-
-      <div class="col-sm-8 offset-lg-2">
-      <div class="row p-4  bg-dark">
-      
-      <div class="col-sm-6">
-        <div class="mb-2 ">
-          <label for="formFile" class="form-label">Ejemplo de seleccion de archivo</label>
-          <input class="form-control" type="file" id="formFile">
-        </div>
-      </div>
-
-      <div class="col-sm-6">
-        <div class="m-3 p-2">
-          <div class="form-check form-switch">
-            <input class="form-check-input" type="checkbox"   id="flexSwitchCheckChecked" checked>
-            <label class="form-check-label" for="flexSwitchCheckChecked">Checked  switch</label>
-          </div>
-        </div>
-      </div>
-
-    </div>
-    </div>
-
-    </div>
-
   </div>
 </div>
+
+
+<div class="container py-4">
+  <div class="row pt-3">
+    <div class="col-sm-12">
+      <h2 class="m-2 text-center">Formularios</h2>
+      <hr>
+  
+      <div class="card py-4 m-2 bg-primary">
+  
+        <div class="pt-3 col-md-12 px-4">
+          <div class="mb-3">
+            <input type="text" class="form-control" placeholder="Name">
+          </div>
+          <div class="mb-3">
+          <input type="password" class="form-control" placeholder="Password">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+        </div>
+  
+        <div class="col-lg-12 col-sm-12 px-4 pb-3">
+        <div class="row py-3 px-5 bg-dark">
+        
+        <div class="col-sm-6">
+          <div class="mb-2 ">
+            <label for="formFile" class="form-label">Ejemplo de seleccion de archivo</label>
+            <input class="form-control" type="file" id="formFile">
+          </div>
+        </div>
+  
+        <div class="col-sm-6">
+          <div class="m-3 p-2">
+            <div class="form-check form-switch">
+              <input class="form-check-input" type="checkbox"   id="flexSwitchCheckChecked" checked>
+              <label class="form-check-label" for="flexSwitchCheckChecked">Checked  switch</label>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+      </div>
+  
+      </div>
+  
+    </div>
+  </div>
+</div>
+
 
 {% endblock %}
